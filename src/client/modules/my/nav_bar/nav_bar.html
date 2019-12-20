@@ -1,0 +1,18 @@
+<template>
+    <nav class="nav" role="navigation">
+        <ul class="nav__list">
+            <template for:each={navItems} for:item="navItem">
+                <li key={navItem.name}>
+                    <label for={navItem.name}>
+                        <a
+                            href="#"
+                            title={navItem.name}
+                        >
+                            {navItem.name}
+                        </a>
+                    </label>
+                </li>
+            </template>
+        </ul>
+    </nav>
+</template>
